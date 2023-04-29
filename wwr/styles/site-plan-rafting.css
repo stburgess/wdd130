@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@300;700&display=swap');
+
+:root {
+  --primary-color: #4C94BD;
+  --secondary-color: #697277;
+  --accent1-color: #FFFFFF;
+  --accent2-color: #F0F38F;
+  --heading-font: 'Comme:wght@700', san-serif;
+  --paragraph-font: 'Comme:wght@300', san-serif;
+  --nav-background-color: #FFFFFF;
+  --nav-link-color: #F0F38F;
+  --nav-hover-link-color: #F0F38F;
+  --nav-hover-background-color: #4C94BD;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent2-color);
+}
+
+p {
+  padding: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
