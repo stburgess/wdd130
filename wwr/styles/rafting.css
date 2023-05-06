@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 :root {
   --primary-color: #4C94BD;
@@ -9,13 +10,19 @@
   --paragraph-font: 'Comme:wght@300', sans-serif;
   --nav-background-color: #FFFFFF;
   --nav-link-color:  #4C94BD;
-  --nav-hover-link-color: #F0F38F;
+  --nav-hover-link-color:  #FFFFFF;
   --nav-hover-background-color: #4C94BD;
+  --company-name-font: 'Carter' sans-serif;
+  --transparent-color: #0000008F;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
 }
 
 .hero {
@@ -30,10 +37,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero h1 { 
   position: absolute;
-  top: 15px;
-  left: 500px;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--transparent-color);
   color: var(--accent1-color);
+  font-family: var(--company-name-font-font);
+  font-size: 4.0rem;
 }
 
 .hero article img {
@@ -44,12 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero article {
   position: absolute;
-  top: 200px;
-  left: 100px;
-  background-color: rgba(0, 0, 0, 0.5);  /* <!--var(--primary-color);-->*/
-  font-family: var(--paragraph-font);
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--transparent-color);
   color: var(--accent1-color); 
-  width: auto;
+  width: 900px;
   height: auto;
   padding: 10px;
 }
@@ -75,4 +85,8 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+.sociallinks {
+  text-decoration: none;
 }
