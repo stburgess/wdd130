@@ -42,7 +42,7 @@ p {
 
 .hero h1 { 
   position: absolute;
-  top: 5%;
+  top: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--transparent-color);
@@ -53,7 +53,7 @@ p {
 
 .hero article {
   position: absolute;
-  top: 425px;
+  top: 450px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--transparent-color);
