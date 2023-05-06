@@ -16,6 +16,11 @@
   --transparent-color: #0000008F;
 }
 
+header img {
+  width: 150px;
+  height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -46,15 +51,9 @@ p {
   font-size: 4.0rem;
 }
 
-.hero article img {
-  float: right;
-  width: 250px;
-  height: auto;
-}
-
 .hero article {
   position: absolute;
-  top: 400px;
+  top: 425px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--transparent-color);
@@ -62,6 +61,12 @@ p {
   width: 900px;
   height: auto;
   padding: 10px;
+}
+
+.hero article img {
+  float: right;
+  width: auto;
+  height: 200px;
 }
 
 nav {
@@ -87,6 +92,7 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-.sociallinks {
-  text-decoration: none;
+.sociallinks img {
+  width: 50px;
+  height: auto;
 }
