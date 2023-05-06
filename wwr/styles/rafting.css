@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@300;700&display=swap');
+
+:root {
+  --primary-color: #4C94BD;
+  --secondary-color: #697277;
+  --accent1-color: #FFFFFF;
+  --accent2-color: #F0F38F;
+  --heading-font: 'Comme:wght@700', sans-serif;
+  --paragraph-font: 'Comme:wght@300', sans-serif;
+  --nav-background-color: #FFFFFF;
+  --nav-link-color: #697277;
+  --nav-hover-link-color: #F0F38F;
+  --nav-hover-background-color: #4C94BD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+
+.hero {
+    position: relative;
+  }
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 { 
+  position: absolute;
+  top: 15px;
+  left: 500px;
+  font-family: var(--paragraph-font);
+  color: var(--accent1-color); 
+
+}
+
+.hero article img {
+  float: right;
+  width: 250px;
+  height: auto;
+}
+
+.hero article {
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  background-color: #247;
+  width: 800px;
+  height: auto;
+}
+
+.hero article {
+  font-family: var(--paragraph-font);
+  color: var(--accent1-color);  
+}
+
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav header {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+  
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
