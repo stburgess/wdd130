@@ -42,9 +42,9 @@ p {
 
 .hero h1 { 
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: var(--transparent-color);
   color: var(--accent1-color);
   font-family: var(--company-name-font-font);
@@ -53,9 +53,9 @@ p {
 
 .hero article {
   position: absolute;
-  top: 450px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: var(--transparent-color);
   color: var(--accent1-color); 
   width: 900px;
