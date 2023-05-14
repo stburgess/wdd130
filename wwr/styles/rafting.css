@@ -152,11 +152,17 @@ figcaption {
 footer {
   display: grid;
   grid-template-columns: auto auto;
-  margin: 20px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--primary-color);
 }
 
 footer p {
   grid-column: 1/2;
+  color: var(--accent1-color);
+  align-self: center;
 }
 
 footer nav {
