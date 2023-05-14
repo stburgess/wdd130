@@ -28,7 +28,9 @@ header img {
   height: auto;
   grid-column: 1/2;
   justify-self: left;
-  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--primary-color);
 }
 
 header nav {
