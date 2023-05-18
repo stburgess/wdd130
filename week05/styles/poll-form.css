@@ -31,7 +31,7 @@ form {
   margin: 0 auto;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5;
+  border-radius: 0.5rem;
   background-color: #eee;
   display: grid;
 }
@@ -78,6 +78,8 @@ button {
   border-radius: 0.5rem;
   padding: 0.75rem;
   font-size: 1.2rem;
+  width: 150px;
+  margin: 0 auto;
 }
 
 button:hover {
