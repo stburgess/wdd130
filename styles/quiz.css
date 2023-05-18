@@ -16,7 +16,7 @@ body {
 
 header {
   margin: 0 auto;
-  width: 650px;
+  width: 600px;
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
 }
 
 form {
-  width: 650px;
+  width: 600px;
   margin: 0 auto;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -36,11 +36,9 @@ form {
   display: grid;
 }
 
-
-legend {
-  padding: 0.5rem;
-  color: navy;
-  font: 1.3em;
+div {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 label, input, button, select, textarea {
@@ -54,11 +52,10 @@ label {
 
 input, textarea, select {
   width: 100%;
-}
-
-input, select, textarea {
+  background-color: #fff;
   padding: 0.5rem;
   font-size: 1.1rem;
+  resize: vertical;
 }
 
 button {
@@ -79,29 +76,9 @@ button:hover {
 
 footer {
   margin: 1rem auto 0;
-  width: 650px;
+  width: 600px;
   text-align: center;
   font-size: 0.8em;
   color: #777;
   border-top: 1px solid #ccc;
-}
-
-.form-item {
-  display: grid;
-  align-items: center;
-}
-
-.column1 {
-  grid-template-columns: 3fr 1fr;
-  margin: 0.5rem 0;
-}
-
-.column2 {
-  grid-template-columns: 1fr 2fr;
-  margin: 0.5rem 0;
-}
-
-.feedback {
-  grid-template-columns: 3fr 1fr;
-  margin-top: 1.0rem;
 }
