@@ -106,7 +106,7 @@ section {
   padding-top: 0px;
 }
 
-section h2 {
+section h2, h1 {
   color: var(--accent1-color);
   background-color: var(--primary-color);
   padding-top: 10px;
