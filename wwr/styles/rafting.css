@@ -3,56 +3,49 @@
 
 :root {
   --primary-color: #326785;
-  --secondary-color: #697277;
+  --secondary-color: #F0F6F9;
   --accent1-color: #FFFFFF;
-  --accent2-color: #F0F38F;
+  --accent2-color: #000000;
   --heading-font: 'Comme:wght@700', sans-serif;
   --paragraph-font: 'Comme:wght@300', sans-serif;
   --nav-background-color: #FFFFFF;
-  --nav-link-color:  #326785;
-  --nav-hover-link-color:  #FFFFFF;
+  --nav-link-color: #326785;
+  --nav-hover-link-color: #FFFFFF;
   --nav-hover-background-color: #326785;
+  --submit-hover-background-color: #005000;
   --company-name-font: 'Carter' sans-serif;
   --transparent-color: #0000008F;
 }
 
 header {
   margin: 10px auto;
-	display: grid;
-	grid-template-columns: auto 1fr;
+  display: grid;
+  grid-template-columns: auto 1fr;
   background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 header img {
   width: 125px;
   height: auto;
-  grid-column: 1/2;
-  justify-self: left;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--primary-color);
 }
 
 header nav {
-  display: block;
-  color: var(--nav-link-color);
+  color: var(--nav-background-color);
   background-color: var(--nav-background-color);
   font-family: var(--heading-font);
   font-size: 1.2rem;
-  padding: 10px;
-  grid-column: 2/3;
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  gap: 5px;
+  margin: auto;
+  padding: 5px;
 }
 
 header nav a {
-  display:inline-block;
   width: 10rem;
   text-align: center;
   padding: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,12 +67,10 @@ p {
   display: block;
   width: 100%;
   height: auto;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
-.hero h1 { 
+.hero h1 {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -96,7 +87,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--transparent-color);
-  color: var(--accent1-color); 
+  color: var(--accent1-color);
   width: 900px;
   height: auto;
   padding: 10px;
@@ -109,26 +100,19 @@ p {
 }
 
 section {
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   margin-top: 10px;
   padding-bottom: 20px;
   padding-top: 0px;
 }
 
 section h2 {
-  color: var(--accent1-color); 
+  color: var(--accent1-color);
   background-color: var(--primary-color);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   margin-top: 0px;
-}
-
-nav {
-  background-color: var(--nav-background-color);
-  display: flex;
 }
 
 figure {
@@ -144,42 +128,47 @@ figure img {
 }
 
 figcaption {
-  background-color: var(--primary-color);
-  color: var(--accent1-color);
+  background-color: var(--secondary-color);
+  /*var(--primary-color);*/
+  color: var(--accent2-color);
+  /*var(--accent1-color);*/
   font-family: var(--paragraph-font);
   padding: 3px;
   text-align: center;
 }
 
 footer {
-  display: grid;
-  grid-template-columns: auto auto;
   margin-top: 10px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
   background-color: var(--primary-color);
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--primary-color);
+  align-items: center;
 }
 
 footer p {
-  grid-column: 1/2;
   color: var(--accent1-color);
-  align-self: center;
 }
 
 footer nav {
-  grid-column: 2/3;
-  justify-self: right;
+  background-color: var(--nav-background-color);
+  color: var(--nav-background-color);
+  display:flex;
+}
+
+footer nav a {
+  width:70px;
+  height: 70px;
 }
 
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
   text-decoration: none;
 }
-  
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
 }
 
 .section-about {
@@ -187,7 +176,107 @@ nav a:hover {
   padding-top: 0px;
 }
 
+.section-contact {
+  display: grid;
+  grid-template-columns: 8fr 7fr;
+  grid-template-rows: auto auto;
+  align-content: center;
+}
+
 .sociallinks img {
   width: 50px;
-  margin: 10px;
+  height: auto;
+  padding: 10px;
+}
+
+/*added for contact us*/
+form {
+  width: 450px;
+  margin: auto auto;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  display: grid;
+}
+
+label, input, button, select, textarea, table {
+  font-family: 'Comme:wght@300', sans-serif;
+  font-size: 1rem;
+}
+
+label {
+  text-align: left;
+  padding: 10px;
+}
+
+input, textarea, select {
+  width: 100%;
+  background-color: var(--accent1-color);
+  padding: 0.5rem;
+  resize: vertical;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  width: 175px;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: var(--submit-hover-background-color);
+}
+
+thead {
+  font-size: 1.3rem;
+}
+
+form div {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+tr {
+  width: auto;
+}
+
+.form {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin: auto;
+}
+
+.checkbox-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: start;
+  margin: 0;
+  padding: 0;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+.map {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: auto;
+}
+
+.contact-info {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+.management img {
+  width: 100%;
+  max-height: 250px;
 }
