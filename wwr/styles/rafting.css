@@ -198,14 +198,15 @@ form {
   border-radius: 0.5rem;
   background-color: var(--secondary-color);
   display: grid;
+  grid-template-columns: 1fr;
 }
 
-label, input, button, select, textarea, table {
+label, legend, input, button, textarea, table {
   font-family: 'Comme:wght@300', sans-serif;
   font-size: 1rem;
 }
 
-label {
+label, legend {
   text-align: left;
   padding: 10px;
 }
@@ -225,6 +226,10 @@ button {
   padding: 0.75rem;
   font-size: 1.2rem;
   width: 175px;
+}
+
+.button-container {
+  display: flex;
   justify-content: center;
 }
 
@@ -251,16 +256,29 @@ tr {
   margin: auto;
 }
 
-.checkbox-item {
+.radio-container {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  justify-items: start;
+  margin: 0;
+  height: 10px;
+}
+
+.checkbox-container {
   display: grid;
   grid-template-columns: 1fr auto;
   justify-items: start;
   margin: 0;
-  padding: 0;
+  padding-left: 0px;
+  padding-bottom: 20px;
 }
 
 input[type=checkbox] {
-  transform: scale(1.5);
+  transform: scale(0.7);
+}
+
+input[type=radio] {
+  transform: scale(0.5);
 }
 
 .map {

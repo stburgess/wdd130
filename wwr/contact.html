@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Whitewater Rafting | Contact Us</title>
-    <meta name="description" content="Whitewater Rafting contact us page.">
+    <meta name="description" content="Whitewater Rafting contact information and submission form">
     <meta name="author" content="Stephen T. Burgess">
     <link rel="stylesheet" href="styles/rafting.css">
   </head>
@@ -46,7 +46,7 @@
           <div class="form">
             <form>
             <div>
-              <label for="name">Full Name:</label><br>
+              <label for="name">Name:</label><br>
               <input type="text" id="name" name="name">
             </div>
             <div>
@@ -54,28 +54,30 @@
               <input type="email" id="email" name="email">
             </div>
             <div>
-              <label for="purpose">Purpose of your message:</label><br>
-              <select id="purpose" name="purpose">
-                <option value="" selected disabled>Choose one ...</option>
-                <option value="prog">General Inquiry</option>
-                <option value="style">Reservation Question</option>
-                <option value="markup">Website Suggestion</option>
-              </select>
+              <label>Purpose of your message:</label>
+              <div class="radio-container">
+              <input type="radio" id="general" name="purpose">  
+              <label for="general">General Inquiry</label>
+              </div>
+              <div class="radio-container">
+              <input type="radio" id="reservation" name="purpose">  
+              <label for="reservation">Reservation Question</label>
+              </div>
+              <div class="radio-container">
+              <input type="radio" id="suggestion" name="purpose">  
+              <label for="suggestion">Website Suggestion</label>
+              </div>
             </div>
             <div>
               <label for="message">Enter your message below:</label><br>
               <textarea id="message" name="message" rows="4"></textarea>
             </div>
-            <div class="checkbox-item">
-              <div>
-              <label for="subscribe">Please subscribe me to the free monthly newsletter</label>
+            <div class="checkbox-container">
+              <input type="checkbox" id="subscribe" name="subscribe" checked>
+              <label for="subscribe">Please subscribe me to the monthly newsletter</label>
             </div>
-          <div>
-              <input type="checkbox" id="subscribe" name="subscribe" checked><br>
-            </div>
-            </div>
-            <div>
-            <button type="submit">Submit Message</button>
+            <div class="button-container">
+              <button type="submit">Submit Message</button>
             </div>
           </form>
           </div>
