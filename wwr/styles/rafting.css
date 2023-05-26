@@ -129,9 +129,7 @@ figure img {
 
 figcaption {
   background-color: var(--secondary-color);
-  /*var(--primary-color);*/
   color: var(--accent2-color);
-  /*var(--accent1-color);*/
   font-family: var(--paragraph-font);
   padding: 3px;
   text-align: center;
@@ -165,6 +163,18 @@ nav a:link, nav a:visited {
   color: var(--nav-link-color);
   text-decoration: none;
 }
+
+/*
+a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+a:link, a:visited {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+*/
 
 nav a:hover {
   background-color: var(--nav-hover-background-color);
@@ -303,3 +313,24 @@ input[type=radio] {
   background-color: var(--accent1-color);
   font-size: large;
 }
+
+/*
+.call-to-action {
+  font-family:Arial, sans-serif;
+  font-size: large;
+  padding: 0;
+  margin: 0;
+}
+
+.call-to-action2 {
+  font-family:Arial, sans-serif;
+  font-size: xx-large;
+  padding: 0;
+  margin: 0;
+}
+
+.trips-details {
+  font-family: var(--paragraph-font);
+  width: 100%;
+}
+*/
