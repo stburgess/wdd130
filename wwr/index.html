@@ -1,61 +1,106 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Whitewater Rafting | Home</title>
-    <meta name="description" content="Home page for Whitewater Rafting">
-    <meta name="author" content="Stephen T. Burgess">
-    <link rel="stylesheet" href="styles/rafting.css">
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.png" alt="Rafting Site Logo">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-    </header>
-    <main>
-      <!--
-        <div>
-            <p class="call-to-action2">&#8600&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8601</p>
-            <a class="call-to-action" href="trips.html">&nbsp;&nbsp;&nbsp;&nbsp;I want to know about available trips!</a>
-            <p class="call-to-action2">&#8599&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8598</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Whitewater Rafting | Home</title>
+  <meta name="description" content="Home page of Whitewater Rafting">
+  <meta name="author" content="Stephen T. Burgess">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rafting Site Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Welcome to Whitewater Rafting</h1>
+      <div class="hero section-about">
+        <img src="images/hero.jpg" alt="Home page whitewater rafting hero image">
+      </div>
+    </section>
+    <section>
+      <h2>We've got you covered!</h2>
+      <div class="section-about home-grid">
+        <div class="container-home1">
+          <div>
+            <h3>*** FUN ***</h3>
+            <p>Extreme fun is what Whitewater Rafting is all about.  Whether you are a novice or veteran, we can offer an excursion that is sure to delight.  </p>
+          </div>
+          <div>
+            <h3>*** AFFORDABLE ***</h3>
+            <p>All of our trips provide tremendous value for money and are surprisingly affordable. Be sure to ask about our flexible payment options.</p>
+          </div>
+          <div>
+            <h3>*** SAFE ***</h3>
+            <p>Our safety record is the best in the industry. We have a dedicated in-house director of safety and only employ experienced certified river guides.</p>
+          </div>
         </div>
-        <div class="form">
-          <form>
-            <legend>I want to receive the free newsletter and learn about upcoming special promotional offers!</legend>    
-            <div>
-              <label for="name">Name:</label><br>
-              <input type="text" id="name" name="name">
-            </div>
-            <div>
-              <label for="email">Email:</label><br>
-              <input type="email" id="email" name="email">
-            </div>
-            <button type="submit">Submit for Newsletter</button>
-          </form>
+        <div class="container-home2">
+          <h3>Read what our particpants are saying:</h3>
+          <p>"I have been going on trips with Whitewater Rafting for years and I can say that it never gets boring. These guys really know how to deliver!"</p>
+          <p>Peter M., Toronto</p>
+          <p>"Just went on my first 'novice-level' trip, and wow...I was totally blown-away with how fun it was. Next time I'm bringing all of my friends."</p>
+          <p>Jennifer M., Utah</p>
+          <p>"The best investment in recreational fun you will ever make. I had an awsome time and will definitely be back again."</p>
+          <p>David J., Texas</p>
+          <p>"I had always been afraid to attempt any sort of rafting. But the people at Whitewater were so professional and safety oriented that I finally went for it and I am thrilled to say that I had the time of my life!"</p>
+          <p>Pamala T., Oregon</p>
         </div>
-      -->  
-    </main>
-    <footer>
-      <p>©2023 Whitewater Rafting | Stephen T. Burgess</p>
+        <div class="container-home6">
+          <div class="form form-home">         
+            <form>
+            <p>Sign-up for our newsletter and be the first to know about special promotional offers!
+            </p>
+              <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
+              </div>
+              <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+              </div>
+              <div class="button-container">
+              <button type="submit">SIGN ME UP</button>
+              </div>
+            </form>
+          </div>
+          </div>
+          <div class="container-home5">
+            <h2>Learn more about the many exciting trips we offer...</h2>
+            <a href="trips.html">Show me Trips!</a>
+          </div>
+          <div class="container-home3">
+            <img src="images/group-rafting.jpg" alt="Group of rafters on a river">
+          </div>  
+          <div class="container-home4">
+            <img src="images/group-photo.jpg" alt="Group photo happy rafters on beach">
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <p>©2023 Whitewater Rafting | Stephen T. Burgess</p>
     <!--  <a href="images/home-wireframe.jpg" class="wireframe">contact-us-wireframe</a> -->
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+        <img src=images/facebook.svg alt="Facebook">
       </a>
-      <nav class="sociallinks">
-        <a href="https://facebook.com"> 
-          <img src=images/facebook.svg alt="Facebook">
-        </a>
-        <a href="https://instagram.com">
-          <img src=images/instagram.svg alt="Instagram">
-        </a>
-        <a href="https://twitter.com">
-          <img src=images/twitter.svg alt="Twitter">
-        </a>
-      </nav>
-    </footer>
-  </body>
+      <a href="https://instagram.com">
+        <img src=images/instagram.svg alt="Instagram">
+      </a>
+      <a href="https://twitter.com">
+        <img src=images/twitter.svg alt="Twitter">
+      </a>
+    </nav>
+  </footer>
+</body>
 </html>
