@@ -122,6 +122,10 @@ h1 {
   margin-bottom: 0px;
 }
 
+h1 {
+  font-size: 1.8rem;
+}
+
 figure {
   display: flex;
   flex-flow: column;
@@ -195,7 +199,6 @@ nav a:hover {
   padding: 10px;
 }
 
-/*added for contact us*/
 form {
   width: 450px;
   margin: 10px auto;
@@ -263,7 +266,6 @@ form div {
 form p {
   font-size: 1.1rem;
 }
-
 
 tr {
   width: auto;
@@ -439,7 +441,7 @@ input[type=radio] {
 
 .trips-table th, td {
   border: 1px solid var(--primary-color);
-  padding: 10px;
+  padding: 15px 20px;
   margin: 10px;
   text-align: center;
 }
@@ -453,11 +455,10 @@ table.trips-table {
   background-color: var(--secondary-color);
 }
 
-
-
 .trips-callto {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+  justify-content: space-around;
   width: auto;
   padding: 20px;
   margin: 10px;
@@ -471,13 +472,14 @@ table.trips-table {
   font-family: var(--heading-font);
   font-size: 2rem;
   padding: 20px;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
 }
 
 .trips-callto img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 100%;
+  margin: 10px
 }
 
 .form-home form {
